@@ -332,7 +332,7 @@ nav .links ul:hover>li:not(:hover) .active {
                     margin-bottom: 20px;
                 }
 
-                p {
+                .lead {
                     font-weight: bold;
                     line-height: 2;
                     margin-bottom: 28px;
@@ -363,15 +363,18 @@ nav .links ul:hover>li:not(:hover) .active {
                     margin-bottom: 30px;
                     text-align: start;
 
-                    h3 {
+                    p {
                         padding: 10px 0px;
+                        font-weight: bold;
+
+                        span {
+                            padding: 0px 10px;
+                            color: rgb(108 104 104);
+                            font-family: math;
+                        }
                     }
 
-                    .par {
-                        padding: 0px 10px;
-                        color: rgb(108 104 104);
-                        font-family: math;
-                    }
+
                 }
             }
         }
@@ -399,6 +402,7 @@ nav .links ul:hover>li:not(:hover) .active {
         font-size: 60px;
     }
 }
+
 /*end about*/
 
 /* start skills*/
@@ -549,6 +553,7 @@ nav .links ul:hover>li:not(:hover) .active {
             i {
                 color: var(--purple);
                 padding-bottom: 16px;
+                font-size: 35px;
             }
 
             .text {
@@ -608,6 +613,7 @@ nav .links ul:hover>li:not(:hover) .active {
         font-size: 53px;
     }
 }
+
 /*end services*/
 
 /* start contact */
@@ -735,6 +741,7 @@ nav .links ul:hover>li:not(:hover) .active {
         }
     }
 }
+
 @media (max-width: 767px) {
     .contact .container .box {
         display: block;
@@ -744,6 +751,7 @@ nav .links ul:hover>li:not(:hover) .active {
         }
     }
 }
+
 /*end contact*/
 
 
@@ -760,4 +768,5 @@ footer {
         color: white;
     }
 }
+
 /*end footer*/
