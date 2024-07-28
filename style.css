@@ -189,60 +189,71 @@ nav .links ul:hover>li:not(:hover) .active {
 /* start landing */
 .home {
     background: url(images/photo_2024-07-23_18-18-23.jpg) no-repeat center/cover;
-    /* background-size: cover;*/
     height: calc(100vh - 64px);
     position: relative;
 
+
     .container {
         display: flex;
-        gap: 100px;
+        /* gap: 100px; */
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+        position: relative;
+        margin: auto;
+        width: 85%;
 
         .group {
             max-width: 50%;
 
             h1 {
-                padding-top: 30%;
-                padding-left: 35px;
-
                 span {
                     color: var(--purple);
                 }
             }
 
             p {
-                padding: 30px;
+                margin-top: 20px;
             }
-
-            button {
-                margin: 40px;
-                width: 143px;
-                height: 60px;
-                border-radius: 30px;
-                background: var(--purple);
-                color: white;
-                font-weight: bold;
-                font-size: large;
-                font-family: cursive;
-                border: 3px solid var(--purple);
-            }
-
-            button:hover {
-                transform: scale(1.1);
-                background: var(--gradient);
-                box-shadow: 0px 0.5rem 1rem rgb(134, 39, 194);
-            }
-
         }
 
+
+
+        button {
+            margin: 40px;
+            width: 143px;
+            height: 60px;
+            border-radius: 30px;
+            background: var(--purple);
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            font-family: cursive;
+            border: 3px solid var(--purple);
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background: var(--gradient);
+            box-shadow: 0px 0.5rem 1rem rgb(134, 39, 194);
+        }
+
+    }
+
+    .image {
+        width: 35%;
+        position: relative;
+
         img {
-            width: 26%;
+
             border-radius: 50%;
-            height: 50vh;
-            transform: translateY(30%);
+            width: 100%;
         }
     }
 
 }
+
+
 
 @media (max-width:768px) {
 
@@ -264,16 +275,13 @@ nav .links ul:hover>li:not(:hover) .active {
                 }
 
                 button {
-                    margin: -8px 27px;
+                    margin: 16px 0px;
 
                 }
             }
 
-            img {
-                transform: translate(46%, 11%);
-                width: 55%;
-                border-radius: 50%;
-                height: 44vh;
+            .image {
+                width: 66%;
             }
         }
     }
@@ -645,19 +653,10 @@ nav .links ul:hover>li:not(:hover) .active {
                     flex-direction: column;
                     background-color: white;
                     align-items: start;
-                    padding: 25px 40px;
+                    padding: 25px 10px;
                     border-radius: 0px;
 
-                    .title {
-                        font-size: 50px;
-                    }
 
-                    p {
-                        font-size: 20px;
-                        max-width: 55%;
-                        font-weight: 700;
-                        margin-top: 20px;
-                    }
 
                     .inputBox {
                         position: relative;
@@ -761,9 +760,12 @@ nav .links ul:hover>li:not(:hover) .active {
         gap: 15px;
     }
 
+    .contact .container .bigbox .box .title {
+        font-size: 30px;
+    }
+
     .contact .container .bigbox .box .info p {
         display: flex;
-
         font-weight: 600;
         font-size: 15px;
         flex-wrap: wrap;
