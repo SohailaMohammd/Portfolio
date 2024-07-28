@@ -399,8 +399,8 @@ nav .links ul:hover>li:not(:hover) .active {
         font-size: 60px;
     }
 }
-
 /*end about*/
+
 /* start skills*/
 .skills {
     padding-top: 60px;
@@ -608,178 +608,145 @@ nav .links ul:hover>li:not(:hover) .active {
         font-size: 53px;
     }
 }
-
 /*end services*/
+
 /* start contact */
 .contact {
+    background: antiquewhite;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #d4bae3;
     background: url(images/photo_2024-07-24_23-47-36.jpg) no-repeat center/cover;
 
     .container {
-        .bigbox {
+        .box {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
+            gap: 20px;
 
-            .box {
+            .form form {
+                padding: 20px;
+                height: 100%;
                 display: flex;
-                align-items: center;
-                justify-content: space-around;
-                gap: 50px;
-                width: 50%;
-                position: relative;
-                height: 100vh;
-                height: 100vh;
+                flex-direction: column;
+                align-items: start;
+                border: 6px solid;
+                color: #ffffff6b;
+                border-radius: 10px;
+                margin-bottom: 10px;
 
-                .title {
+                h1 {
                     color: #886b99e8;
                     font-size: var(--font);
-                    text-align: center;
                     font-weight: 800;
                     letter-spacing: -3px;
                     margin: 0;
                     font-family: "Work Sans", sans-serif;
+                    margin-bottom: 27px;
+
                 }
 
-                form {
+                p {
+                    margin-bottom: 27px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: black;
+                }
+
+                input,
+                textarea {
+
+                    border: none;
+                    border-bottom: 2px solid #928f8f;
+                    width: 80%;
+                    margin: 10px 0;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                }
+
+                label {
                     position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    z-index: 1;
-                    display: flex;
-                    flex-direction: column;
-                    background-color: white;
-                    align-items: start;
-                    padding: 25px 10px;
-                    border-radius: 0px;
-
-
-
-                    .inputBox {
-                        position: relative;
-
-                        textarea {
-                            border: none;
-                            border-bottom: 3px solid #ddd;
-                        }
-
-                        textarea:hover {
-                            box-shadow: 0px 0.5rem 1rem rgba(135, 39, 194, 0.374);
-
-                        }
-
-                        input {
-                            color: #666;
-                            margin: 12px 0px;
-                            padding: 10.5px 0px;
-                            font-size: 1.7rem;
-                            text-transform: none;
-                            border: none;
-                            border-bottom: 3px solid #ddd;
-                        }
-
-                        input:hover {
-                            box-shadow: 0px 0.5rem 1rem rgba(135, 39, 194, 0.374);
-
-                        }
-
-                        label {
-                            position: absolute;
-                            left: 0px;
-                            top: 2.7rem;
-                            font-size: 20px;
-                            color: #666;
-                            transition: all .2s linear;
-                            margin-left: 20px;
-                        }
-
-
-                    }
-
-                    button {
-                        margin-top: 40px;
-                        width: 143px;
-                        height: 60px;
-                        border-radius: 30px;
-                        background: var(--purple);
-                        color: white;
-                        font-weight: bold;
-                        font-size: large;
-                        font-family: cursive;
-                        border: 3px solid var(--purple);
-                    }
-
-                    button:hover {
-                        transform: scale(1.1);
-                        background: var(--gradient);
-                        box-shadow: 0px 0.5rem 1rem rgb(134, 39, 194);
-                    }
+                    left: 0px;
+                    top: 2.7rem;
+                    font-size: 20px;
+                    color: #666;
+                    transition: all .2s linear;
+                    margin-left: 20px;
                 }
 
-                .info {
+                input:hover {
+                    box-shadow: 0px 0.5rem 1rem rgba(135, 39, 194, 0.374);
+
+                }
+
+                textarea:hover {
+                    box-shadow: 0px 0.5rem 1rem rgba(135, 39, 194, 0.374);
+
+                }
+            }
+
+            button {
+                width: 143px;
+                height: 60px;
+                border-radius: 30px;
+                background: var(--purple);
+                color: white;
+                font-weight: bold;
+                font-size: large;
+                font-family: cursive;
+                border: 3px solid var(--purple);
+                margin-top: 10px;
+            }
+
+            button:hover {
+                transform: scale(1.1);
+                background: var(--gradient);
+                box-shadow: 0px 0.5rem 1rem rgb(134, 39, 194);
+            }
+        }
+
+        .info {
+            text-align: left;
+            border: 6px solid;
+            color: #ffffff6b;
+            border-radius: 10px;
+
+            h2 {
+                padding: 20px 10px;
+                color: #886b99e8;
+            }
+
+            p {
+                padding: 20px;
+                color: var(--purple);
+                font-weight: bold;
+                font-size: 17px;
+
+                i {
+                    border-radius: 50%;
+                    padding: 15px;
                     background: var(--purple);
+                    margin-right: 10px;
                     color: white;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start;
-                    gap: 41px;
-                    width: 50%;
-                    padding: 32px 16px;
-                    position: absolute;
-                    top: 30vh;
-                    left: 66%;
-                    z-index: 2;
-                    border-radius: 0px;
 
-                    p {
-                        display: flex;
-                        gap: 20px;
-                        font-weight: bold;
-                        font-size: 20px;
-                    }
                 }
             }
         }
     }
 }
-
 @media (max-width: 767px) {
-    .contact .container .bigbox {
+    .contact .container .box {
         display: block;
-    }
 
-    .contact .container .bigbox .box {
-        width: 87%;
-    }
-
-    .contact .container .bigbox .box .info {
-        gap: 15px;
-    }
-
-    .contact .container .bigbox .box .title {
-        font-size: 30px;
-    }
-
-    .contact .container .bigbox .box .info p {
-        display: flex;
-        font-weight: 600;
-        font-size: 15px;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contact .container .bigbox .box form .inputBox input,
-    textarea {
-        width: 100%;
+        .form form h1 {
+            font-size: 50px;
+        }
     }
 }
-
 /*end contact*/
+
+
 /*start footer*/
 footer {
     background: var(--purple);
@@ -793,5 +760,4 @@ footer {
         color: white;
     }
 }
-
 /*end footer*/
