@@ -139,6 +139,12 @@ nav .links ul:hover>li:not(:hover) .active {
         opacity: 1;
     }
 
+    nav .links ul:hover>li:not(:hover) .active {
+        background: white;
+        color: black;
+        transition: 0.5s all ease;
+    }
+
     nav input:checked~label::before {
         content: "\f00d";
     }
@@ -403,6 +409,12 @@ nav .links ul:hover>li:not(:hover) .active {
     }
 }
 
+@media (max-width: 300px) {
+    .about .container .group .image {
+        width: 100%;
+    }
+}
+
 /*end about*/
 
 /* start skills*/
@@ -514,6 +526,19 @@ nav .links ul:hover>li:not(:hover) .active {
         a {
             font-size: 20px;
         }
+    }
+}
+
+@media (max-width: 297px) {
+    .skills .container .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(157px, 1fr));
+        grid-gap: 100px;
+        margin-top: 80px;
+    }
+
+    .skills .container .title {
+        font-size: 40px;
     }
 }
 
